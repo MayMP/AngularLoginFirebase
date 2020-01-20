@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularPWA": {
+    "AngularLoginFirebase": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/AngularPWA",
+            "outputPath": "dist/AngularLoginFirebase",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AngularPWA:build"
+            "browserTarget": "AngularLoginFirebase:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "AngularPWA:build:production"
+              "browserTarget": "AngularLoginFirebase:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularPWA:build"
+            "browserTarget": "AngularLoginFirebase:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AngularPWA:serve"
+            "devServerTarget": "AngularLoginFirebase:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AngularPWA:serve:production"
+              "devServerTarget": "AngularLoginFirebase:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "AngularPWA"
+  "defaultProject": "AngularLoginFirebase"
 }
